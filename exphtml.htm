@@ -1,0 +1,57 @@
+<html>
+   <body>
+    <style>
+      body {
+        background-image: url('car1.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+      }
+      
+      .form {
+        max-width: 500px;
+        margin: auto;
+      }
+      form {text-align: center;}
+      button {text-align: center;}
+
+      
+      </style>
+      <form action = "http://127.0.0.1:8081/process_get"  method = "GET" style="border:1px solid #ccc">
+        <link rel="stylesheet" href="style.css"> 
+        <div class="container">
+            <h1><B>SMART PARKING</B></h1>
+            
+            <hr>
+        
+            <label for="email"><b>Email</b></label><br>
+            <input type="text" placeholder="Enter Email" name="email" required><br>
+        
+            <label for="psw"><b>Password</b></label><br>
+            <input type="password" placeholder="Enter Password" name="psw" required><br>
+
+            <label for="option"><b>enter your choice a)book b)close c)cancel d)reserve</b></label><br>
+            <input type="text" placeholder="Enter your choice" name="option" required><br>
+
+            <label for="reserve"><b>if you want to reserve??</b></label><br>
+            <input type="text" placeholder="Enter date of reservation" name="reserve" ><br>
+        
+            <label>
+              <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"><b>Remember me</b> <br>
+            </label>
+                
+            <div class="clearfix">
+              <button type="button" class="cancelbtn">Cancel</button><br>
+              <button type="submit" class="signupbtn">proceed</button><br>
+            </div>
+          </div>
+      </form>
+      
+   </body>
+</html>
+
+
+
+    
+
+
